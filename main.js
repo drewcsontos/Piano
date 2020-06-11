@@ -14,4 +14,4 @@ document.addEventListener("load", function (event) {
     ["A", "D", "E", "F", "G", "H", "S", "T", "U", "W", "Y"].map(key => {
         let x = new Audio("audio/" + key + ".mp3");
     })
-}
+})
