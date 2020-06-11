@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+
+}
+
+.container {
+    text-align: center;
+    padding: 20%;
+}
+
+.white-keys kbd {
+
+    display: inline-block;
+    width: 50px;
+    height: 180px;
+    background-color: white;
+    border: solid 3px gray;
+    margin-left: -4px;
+    text-align: center;
+    font-size: 150%;
+    line-height: 300px;
+}
+
+.black-keys kbd {
+    display: inline-block;
+    width: 50px;
+    height: 140px;
+    background-color: black;
+    /*border: solid 3px gray;*/
+    margin-left: 4px;
+    text-align: center;
+    font-size: 150%;
+    line-height: 180px;
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+#W {
+    left: -27px;
+}
+
+#E {
+    left: -31px;
+}
+
+#T {
+    left: 24px;
+}
+
+#Y {
+    left: 22px;
+}
+
+#U {
+    left: 20px;
+}
+
+kbd:hover {
+    background-color: red /*
+
+    animation-name:example;
+    animation-duration: 1s;
+    */
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
