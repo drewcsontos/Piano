@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Virtual Piano</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -9,24 +10,24 @@
 <body>
 <h1>Piano created by Andrew Csontos</h1>
 <p>Use your keyboard or mouse to play the piano.</p>
-<script src="main.js"></script>
 <div class="container">
     <div class='white-keys'>
-        <kbd onclick="playNote('A')">A</kbd>
-        <kbd onclick="playNote('S')">S</kbd>
-        <kbd onclick="playNote('D')">D</kbd>
-        <kbd onclick="playNote('F')">F</kbd>
-        <kbd onclick="playNote('G')">G</kbd>
-        <kbd onclick="playNote('H')">H</kbd>
-        <kbd onclick="playNote('J')">J</kbd>
+        <kbd>A</kbd>
+        <kbd>S</kbd>
+        <kbd>D</kbd>
+        <kbd>F</kbd>
+        <kbd>G</kbd>
+        <kbd>H</kbd>
+        <kbd>J</kbd>
     </div>
     <div class="black-keys">
-        <kbd onclick="playNote('W')" id="W">W</kbd>
-        <kbd onclick="playNote('E')" id="E">E</kbd>
-        <kbd onclick="playNote('T')" id="T">T</kbd>
-        <kbd onclick="playNote('Y')" id="Y">Y</kbd>
-        <kbd onclick="playNote('U')" id="U">U</kbd>
+        <kbd id="W">W</kbd>
+        <kbd id="E">E</kbd>
+        <kbd id="T">T</kbd>
+        <kbd id="Y">Y</kbd>
+        <kbd id="U">U</kbd>
     </div>
 </div>
+<script src="main.js"></script>
 </body>
 </html>
