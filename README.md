@@ -1,1 +1,1 @@
-# Piano with HTML, CSS, and Javascript
+# Piano created with HTML, CSS, and Javascript
