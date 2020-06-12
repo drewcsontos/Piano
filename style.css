@@ -6,7 +6,6 @@ h1, p {
 body {
     background-color: black;
     overflow: hidden;
-    touch-action: manipulation;
 }
 
 kbd, div {

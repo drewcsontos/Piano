@@ -9,6 +9,14 @@ document.addEventListener("keydown", function (event) {
 document.querySelectorAll("kbd").forEach(x => {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         x.addEventListener("touchend", function(){playNote(x.textContent)},false)
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function (event) {
+            let now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
     }
     else
     x.addEventListener("click", function(){playNote(x.textContent)},false)
