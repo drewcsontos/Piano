@@ -3,7 +3,7 @@ document.addEventListener("keydown", function (event) {
 
         playNote(event.key);
     } else
-        console.log('Incorrect key')
+        console.log("Incorrect key")
 
 })
 document.querySelectorAll("kbd").forEach(x => {
