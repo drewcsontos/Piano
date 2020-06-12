@@ -12,6 +12,10 @@ document.querySelectorAll("kbd").forEach(x => {
 
 function playNote(key) {
     console.log(key);
-    let audio = new Audio("audio/" + key.toUpperCase() + ".mp3");
-    audio.play();
+    let sound = new Howl({
+        src: ["audio/" + key.toUpperCase() + ".mp3"]
+    });
+    sound.play();
+    /*let audio = new Audio("audio/" + key.toUpperCase() + ".mp3");
+    audio.play();*/
 }
